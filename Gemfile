@@ -2,9 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
-
-	
+gem 'rails', '4.2.6'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -13,6 +11,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+
+
+gem 'devise'
+gem 'acts_as_follower'
+gem 'acts_as_votable', '~> 0.10.0'
+gem 'bootstrap-sass'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -47,9 +51,7 @@ group :development do
   gem 'spring'
 end
 
-
 group :production do
-	gem'pg'
-	gem'rails_12factor'
+	gem 'pg'
+	gem 'rails_12factor'
 end
-
